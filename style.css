@@ -18,7 +18,7 @@ body{
   background-image: url(above-fold.jpg);
   background-repeat: no-repeat;
    height: 100vh;
-   width: 100%;
+   width: 100vw;
    background-size: 100% 100%;
    position: relative;
    top: 0;
