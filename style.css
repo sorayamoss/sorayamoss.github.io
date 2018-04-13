@@ -1,210 +1,208 @@
-body{
-
-  font-family: 'Cormorant Garamond', serif;
+body {
+  font-family: 'News Cycle', sans-serif;
 }
 
-/*
-#above-fold{
-  background-image: url(above-fold.jpg);
-  border-width: 2px;
-  border-style: solid;
-  border-color: #ddd;
-  font-family: 'Spectral SC', serif;
-  height: 750px;
 
-}*/
-
-#above-fold {
-  background-image: url(above-fold.jpg);
-  background-repeat: no-repeat;
-   height: 100vh;
-   width: 100vw;
-   background-size: 100% 100%;
-   position: relative;
-   top: 0;
-   left: 0;
-
-  font-family: 'Spectral SC', serif;
-}
-
-#name-header {
-  font-family: 'Spectral SC', serif;
-  line-height: 1.2em;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: 400;
-  font-style: normal;
-  color: #fff;
-  font-size: 30px;
-
+#logo {
+  width: 100%;
+  margin-right: auto;
   text-align: center;
-  position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+  display: block;
+}
+
+
+
+#logotwo {
+  height: 20%;
+  width: 20%;
+  float: right;
+}
+
+#icons {
+  color: #939393;
+  float: right;
+  margin-top: 5%;
+  margin-right: -15%;
+  letter-spacing: .7em;
+}
+#icons a{
+  color: #939393;
 
 }
 
-#description {
-  font-family: 'Spectral SC', serif;
-  line-height: 1.2em;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: 400;
-  font-style: normal;
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  position: absolute;
-   top: 54%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-}
-.navbar a{
-  color: #fff;
+
+
+
+#home .navbar a{
+  color: #000000;
   margin-left: 20px;
   margin-right: 20px;
 }
-.navbar a:hover{
+ #home .navbar a:hover{
   font-weight: bold;
   color: #DAD8D8;
 
 }
 
-.navbar{
+#home .navbar{
+  margin: auto;
+  margin-bottom: 7%;
+}
+
+#home .navbar ul{
   margin: auto;
 }
 
-.navbar ul{
-  margin: auto;
-}
-
-
-#bio-photo{
-  display: block;
+hr{
+  width: 90%;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 50%;
-  overflow: hidden;
+  color: #000000;
+  border-color: #000000;
+}
+
+#bio-photo{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 65%;
 }
 
 #bio{
   text-align: left;
-  font-size: 30px;
-  margin-top: 190px;
-
-}
-
-#education{
-  font-size: 70px;
-  margin: auto;
-  padding-top: 30%;
-  color: #fff;
-}
-
-#education-section{
-  background-color: #000941;
-  color: #fff;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-#employment{
-  font-size: 70px;
-  margin: auto;
-  padding-top: 50px;
-  color: #fff;
-}
-
-#employment-section{
-  background-color: #F5D639;
-  color: #fff;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-#leadership{
-  font-size: 70px;
-  margin: auto;
-  padding-top: 250px;
-  color: #fff;
-}
-
-#leadership-section{
-  background-color: #C2205B;
-  color: #fff;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-#ec{
-  font-size: 70px;
-  margin: auto;
-  padding-top: 150px;
-  color: #fff;
-}
-
-#ec-section{
-  background-color: #00AC46;
-  color: #fff;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-#hobbies img{
-  width: 106.7%;
-  float: left;
-  overflow: hidden;
-}
-
-#hobbies a{
-  color: #727272;
-  font-size: 50px;
-  font-family: 'Spectral SC', serif;
-}
-
-#hobbies a:hover{
-  color: #9E0000;
-  text-decoration: none;
-
-}
-
-#dance-quote{
-  margin-top: 150px;
-  text-align: center;
-}
-
-#contact{
-  text-align: center;
-  color: #434343;
-  height: 5%;
-  font-family: 'Spectral SC', serif;
-}
-
-#contact p{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 1.2em;
   display: block;
-  position: relative;
-  margin-left: 600px;
-  margin-right: 600px;
-  margin-top: 60px;
-  height: 50px;
-  border: 3px solid #6E6E6E;
-  padding: 10px;
-  font-weight: bold;
+  margin-top: 6em;
+
 }
 
-#contact p:hover{
-  background-color: #6E6E6E;
-  color: #fff;
-  border-color: #fff;
-}
-#recs h1{
-  text-decoration: underline;
+.thumbnail {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+#portfolio-header{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3em;
+}
 
-div{
-  width:100%;
+#lines{
+  margin-top: -3%;
+}
+
+#portfolio-nav{
+  float: right;
+  color: #000000;
+
+}
+
+#portfolio-nav .navbar li{
+  float: right;
+  color: #000000;
+}
+
+#portfolio-nav .navbar a{
+  float: right;
+  color: #000000;
+}
+
+#portfolio-nav .navbar ul{
+  float: right;
+  color: #000000;
+}
+
+#portfolio-nav .navbar a:hover{
+ font-weight: bold;
+ color: #DAD8D8;
+
+}
+
+/*#small_logo{
+  width: 5%;
+}*/
+
+
+#resume-nav{
+  float: right;
+  color: #000000;
+
+}
+
+#resume-nav .navbar li{
+  float: right;
+  color: #000000;
+}
+
+#resume-nav .navbar a{
+  float: right;
+  color: #000000;
+}
+
+#resume-nav .navbar ul{
+  float: right;
+  color: #000000;
+}
+
+#resume-nav .navbar a:hover{
+ font-weight: bold;
+ color: #DAD8D8;
+
+}
+
+#edu-header{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  margin-top: 37%;
+}
+
+#emp-header{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  margin-top: 20%;
+}
+#ec-header{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  margin-top: 40%;
+}
+#lead-header{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  margin-top: 60%;
+}
+
+#skill-header{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.portfolio-text{
+  margin-top: 10%;
 }

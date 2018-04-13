@@ -1,63 +1,225 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <title>Soraya Moss</title>
   <meta charset="utf-8">
+  <title>Soraya Moss</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- fontawesome here if you need it -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
   <link rel='shortcut icon' type='image/x-icon' href='https://www.shareicon.net/data/2015/10/25/661453_flower_512x512.png' />
-
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|News+Cycle" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
 </head>
 <body>
-  <!-- site content here -->
 
-
-<div id="home-page">
-  <div name = "home" id="above-fold">
+  <div id="home">
+    <img id="logotwo" src="logotwo.png" alt="logotwo">
+    <span id="icons">
+      <a href="https://www.linkedin.com/in/soraya-moss-06911a14a/"><i class="fab fa-linkedin fa-1x"></i></a>
+      <a href="sorayamossresume.pdf"> <i class="fas fa-file-alt fa-1x"></i></a>
+      <a href="mailto:sorayamoss@wustl.edu"><i class="fas fa-envelope fa-1x"></i></a>
+    </span>
+    <img id="logo" src="soraya.png" alt="logo">
     <nav class="navbar navbar-expand-lg">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a id="homeLink" onclick="homePage()" class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#bio">Bio</a>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#bio">BIO</a>
+          </li> -->
+          <li class="nav-item active">
+            <a id="portLink" onclick="portfolioPage()" class="nav-link" href="#portfolio">PORTFOLIO <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+            <a  id="resLink" onclick="resumePage()" class="nav-link" href="#resume">RESUME <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Resume <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="mailto:sorayamoss@wustl.edu">CONTACT <span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
     </nav>
-    <h1 id="name-header">Soraya Moss</h1>
-    <p id="description">programmer. dancer. student. leader.</p>
+
+    <hr>
   </div>
 
 
-  <div class="section" name="bio">
+
+  <div id="home-content">
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img id="bio-photo" src="portrait.JPG" alt="picture of me">
+        </div>
+        <div class="col">
+
+          <span id="bio">
+            <p> Hi, I'm Soraya</p>
+          I am a sophomore at Washington University in St. Louis in the School of Engineering and Applied Sciences. I am currently majoring in Computer Science and minoring in Anthropology with a concentration in Global Health and the Environment. I am a trained classical Indian dancer in Bharata Natyam, as well as the Captain and Choreographer of WashU Chaahat, WashU's Bollywood Fusion dance team. I work as a Introduction to Computer Science Teaching Assistant, in addition to being a campus Tour Guide and peer mentor for first year students. My experience both in coursework and extracurriculars highlights my abilities as an organized and charismatic leader.
+        </span>
+        </div>
+      </div>
+
+
+
+      <!-- <div class="container" name="bio">
+      <div class="row">
+      <div class="col">
+      <img id="bio-photo" src="portrait.JPG" alt="picture of me">
+    </div>
+    <div class="col">
+    <p id="bio">I am a sophomore at Washington University in St. Louis in the School of Engineering and Applied Sciences. I am currently majoring in Computer Science and minoring in Anthropology with a concentration in Global Health and the Environment. I am a trained classical Indian dancer in Bharata Natyam, as well as the Captain and Choreographer of WashU Chaahat, WashU's Bollywood Fusion dance team. I work as a Introduction to Computer Science Teaching Assistant, in addition to being a campus Tour Guide and peer mentor for first year students. My experience both in coursework and extracurriculars highlights my abilities as an organized and charismatic leader.</p>
+  </div>
+</div>
+</div> -->
+
+</div>
+<hr>
+</div>
+
+
+
+<div id="portfolio">
+
+  <div id="portfolio-nav">
+  <nav class="navbar navbar-expand-lg">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" onclick="homePage()" href="#home">HOME <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#bio">BIO</a>
+        </li> -->
+        <li class="nav-item active">
+          <a class="nav-link" onclick="portfolioPage()" href="#portfolio">PORTFOLIO <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link"  onclick="resumePage()" href="#resume">RESUME <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="mailto:sorayamoss@wustl.edu">CONTACT <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li>
+          <img id="small_logo" src="logo.png" alt="logo">
+        </li> -->
+      </ul>
+    </div>
+
+  </nav>
+</div>
+
+  <h1 id="portfolio-header">Portfolio</h1>
+  <img  id="lines" src="lines.png" alt="design lines">
+
+  <div class="container">
     <div class="row">
       <div class="col">
-        <img id="bio-photo"src="portrait.JPG" alt="picture of me">
+        <img class="thumbnail" id="garageOpener" src="garageOpener.png" alt="Garage Opener Web App">
       </div>
       <div class="col">
-        <p id="bio">I am a sophomore at Washington University in St. Louis in the School of Engineering and Applied Sciences. I am currently majoring in Computer Science and minoring in Anthropology with a concentration in Global Health and the Environment. I am a trained classical Indian dancer in Bharata Natyam, as well as the Captain and Choreographer of WashU Chaahat, WashU's Bollywood Fusion dance team. I work as a Introduction to Computer Science Teaching Assistant, in addition to being a campus Tour Guide and peer mentor for first year students. My experience both in coursework and extracurriculars highlights my abilities as an organized and charismatic leader.</p>
+        <ul class="portfolio-text">
+        <li>Garage door web application with live updates based on state of the garage, ability to toggle garage door, toggle light, and update advanced settings such as automatically close and automattically shut light off. Commnicates with
+        two Particle Photons- one to simulate the garage door and one to act as a garage door remote controller. Remote controller has OLED screen that also updates based on the garage's current state. </li>
+        <li> Technologies used: Particle's Photon, Javascript, C++, Particle's Cloud API and Javascript API</li>
+        <li>Built by: Soraya Moss and Sam Margolis</li>
+      </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img  class="thumbnail" id="chatRoom" src="chatRoom.png" alt="Chat room">
+      </div>
+      <div class="col">
+        <ul class="portfolio-text">
+        <li>Online chat room service that allows users to create a nickname, create public or private chatrooms, or direct message users. Creators of chat rooms have the ability to kick out or ban specific users from using the room. All forms of
+        profanity are censored within the chat room and if a user uses profanity too often they are kicked out of the chatroom. SQL database keeps track of quantity of swear words uses by each user and warns users if they have been using too much profanity. Users may also report
+        other users to the creator of the chat room. </li>
+        <li> Technologies used: Javascript, Node.js, Socket.io, Amazon Web Services</li>
+        <li>Built by: Soraya Moss and Sam Margolis</li>
+      </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img  class="thumbnail" id="gorillas" src="gorillas.png" alt="Gorillas">
+      </div>
+      <div class="col">
+        <ul class="portfolio-text">
+        <li>Simplified version of the classic video game, Gorilla's. Users can enter a desired player name and a map of a variety of building heights and locations for the players is generated randomly. Players proceed
+        to enter in desired velocities and angles for their projectiles to shoot at the opposing player. Explosion simulations follow upon impact of the projectile. The players can also specify how many games they would like to play,
+      `and the winner is congratulated upon completion of the game.  </li>
+        <li> Technologies used: Java </li>
+        <li>Built by: Soraya Moss</li>
+      </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img  class="thumbnail" id="calendar" src="calendar.png" alt="Online Calendar">
+      </div>
+      <div class="col">
+        <ul class="portfolio-text">
+        <li>Javascript calendar that allows users to add, delete, and update events dynamically. The calendar uses AJAX with PHP server-side scripts that query a MySQL database to save and retrieve information,
+        including user accounts and events. The calendar notifies the user if there are any events on the current day. The user also has the ability to invite other users to their own events, which are propogated in and invite list and
+      displayed in a JQuery pop-up dialog box.  </li>
+        <li> Technologies used:Javascript, PHP, AJAX, Amazon Web Services</li>
+        <li>Built by: Soraya Moss and Sam Margolis</li>
+      </ul>
       </div>
     </div>
   </div>
+</div>
+
+
+<div id="resume">
+
+
+
+    <div id="resume-nav">
+    <nav class="navbar navbar-expand-lg">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" onclick="homePage()" href="#home">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#bio">BIO</a>
+          </li> -->
+          <li class="nav-item active">
+            <a class="nav-link" onclick="portfolioPage()" href="#portfolio">PORTFOLIO <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link"  onclick="resumePage()" href="#resume">RESUME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="mailto:sorayamoss@wustl.edu">CONTACT <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- <li>
+            <img id="small_logo" src="logo.png" alt="logo">
+          </li> -->
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+
+  <h1 id="portfolio-header">Resume</h1>
+  <img  id="lines" src="lines.png" alt="design lines">
+
   <div class="section" id="education-section">
     <div class="row">
-      <div class="col-4"><p id="education">Education</div>
-      <div class="col-8">  <h3>Washington University in St. Louis</h3>
+      <div class="col-4"><p id="edu-header" id="education">Education</div>
+      <div class="col-8" id="education-text">  <h3>Washington University in St. Louis</h3>
 
         <p> <strong> Saint Louis Missouri, August 2016-Present</strong>
           <em>Currently</em> Enrolled, Completed First-Year. Expected Graduation Date: Spring 2020.
@@ -94,10 +256,14 @@
 
   </div>
 
+
+  <hr>
+
+
   <div class="section" id="employment-section">
     <div class="row">
-      <div class="col-4"><p id="employment">Employment</div>
-      <div class="col-8">
+      <div class="col-4"><p id="emp-header" id="employment">Employment</div>
+      <div class="col-8" id="employment-text">
           <h3>Teaching Assistant, Introduction to Computer Science</h3>
           <p> <strong>Present, Washington University in St. Louis</strong>
           </p>
@@ -119,9 +285,42 @@
       </div>
     </div>
 
+    <hr>
+
+
+    <div class="section" id="skill-section">
+      <div class="row">
+        <div class="col-4"><p  id="skill-header" id="ec">Skills</div>
+        <div class="col-8">
+          <h3>Web Development</h3>
+          <ul>
+            <li>HTML, CSS, Node.js, JQuery, AJAX, JSON</li>
+          </ul>
+
+          <h3>Languages</h3>
+          <ul>
+            <li>Java, Javascript, C++, PHP, SQL, Python, Bash</li>
+          </ul>
+
+          <h3>Development Tools</h3>
+          <ul>
+            <li>Amazon Web Services, Linux, Atom, Eclipse</li>
+          </ul>
+
+          <h3>Business Tools</h3>
+          <ul>
+            <li>Microsoft Excel, Microsoft Powerpoint, Microsoft Word</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+    <hr>
+
+
     <div class="section" id="leadership-section">
       <div class="row">
-        <div class="col-4"><p id="leadership">Leadership</div>
+        <div class="col-4"><p  id="lead-header" id="leadership">Leadership</div>
         <div class="col-8">
           <h3>Captain and Choreographer, WashU Chaahat</h3>
 
@@ -168,9 +367,13 @@
       </div>
 
 
+      <hr>
+
+
+
     <div class="section" id="ec-section">
       <div class="row">
-        <div class="col-4"><p id="ec">Extracurricular</div>
+        <div class="col-4"><p  id="ec-header" id="ec">Extracurricular</div>
         <div class="col-8">
           <h3>Volunteering</h3>
           <strong>2011-Present</strong>
@@ -197,24 +400,15 @@
         </div>
       </div>
 
-
-      <div class="section" id="hobbies">
-        <div class="row">
-          <div id="dance-quote" class="col-sm-8"><a href="https://www.youtube.com/watch?v=yUV7bIwZU4A" >"Dance is my passion, not just my hobby"</a></div>
-          <div class="col-sm-4"><img src="dance.jpg" alt="dance picture" id="dance-photo"></div>
-        </div>
-      </div>
-
-      <div id="contact">
-         <p>Contact Me</p>
-      </div>
-
-    </div>
+      <hr>
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-      </body>
-      </html>
+
+</div>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
